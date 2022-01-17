@@ -75,13 +75,11 @@ function FormCard({ movieId }: Props) {
             <button type="submit" className="btn btn-primary dsrmovie-btn">
               Salvar
             </button>
+            <Link to="/">
+              <button className="btn btn-cancel dsrmovie-btn">Cancelar</button>
+            </Link>
           </div>
         </form>
-        <Link to="/">
-          <button className="btn btn-primary dsrmovie-btn mt-3">
-            Cancelar
-          </button>
-        </Link>
       </div>
     </div>
   );

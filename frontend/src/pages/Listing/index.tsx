@@ -4,6 +4,7 @@ import Pagination from "components/Pagination";
 import { useEffect, useState } from "react";
 import { MoviePage } from "types/movie";
 import { BASE_URL } from "utils/requests";
+import "./styles.css";
 
 function Listing() {
   const [pageNumber, setPageNumber] = useState(0);
@@ -39,7 +40,10 @@ function Listing() {
       <div className="container">
         <div className="row">
           {page.content.map((movie) => (
-            <div key={movie.id} className="col-sm-6 col-lg-4 col-xl-3 mb-3">
+            <div
+              key={movie.id}
+              className="dsrmovie-card col-sm-6 col-lg-4 col-xl-3 mb-3"
+            >
               <MovieCard movie={movie} />
             </div>
           ))}
